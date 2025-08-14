@@ -1,12 +1,37 @@
 site_name: Anthony's Corner
 site_description: A blog about technology, DevOps, and personal insights.
-site_url: http://www.example.com
+site_url: https://trunghq-02.github.io/mkdocs-blog/
 
 theme:
   name: material
+  logo: assets/logo.png
+  favicon: assets/favicon.png
   custom_dir: overrides
   features:
     - navigation.indexes
+    - navigation.tabs
+    - navigation.instant
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+    - header.autohide
+  palette: 
+    # Palette toggle for light mode
+    - scheme: default
+      primary: black
+      accent: black
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: cyan
+      accent: cyan
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode 
 
 plugins:
   - search
@@ -31,15 +56,27 @@ plugins:
 
 extra:
   social:
-    - icon: fontawesome/brands/mastodon
-      name: squidfunk on Mastodon
-      link: https://fosstodon.org/@squidfunk
+    - icon: fontawesome/brands/github
+      name: Anthony's GitHub
+      link: https://github.com/TrungHQ-02
+    - icon: fontawesome/brands/linkedin
+      name: Anthony's LinkedIn
+      link: https://www.linkedin.com/in/qu%E1%BB%91c-trung-ho%C3%A0ng-b363982b6/
+  alternate:
+    - name: English
+      link: /
+      lang: en
+    - name: Vietnamese
+      link: /
+      lang: vi
+  generator: false
 
 hooks:
   - hooks/socialmedia.py
 
 markdown_extensions:
   - attr_list
+  - admonition
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -50,3 +87,4 @@ nav:
      - blog/tags.md
      - blog/index.md
   - About: about.md
+copyright: Copyright &copy; 2024 Anthony Hoang
