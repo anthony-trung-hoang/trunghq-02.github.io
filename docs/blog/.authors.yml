@@ -1,9 +1,5 @@
 authors:
-  team:
-    name: Team
-    description: Creator
-    avatar: https://simpleicons.org/icons/materialformkdocs.svg
-  squidfunk:
-    name: Martin Donath
-    description: Creator
-    avatar: https://github.com/squidfunk.png
+  anthony:
+    name: Anthony Hoang
+    description: DevOps | Platformn Engineer
+    avatar: https://github.com/TrungHQ-02.png
