@@ -45,5 +45,6 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Blog:
-     - blog/index.md
      - blog/tags.md
+     - blog/index.md
+  - About: about/about.md
