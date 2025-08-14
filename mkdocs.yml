@@ -13,7 +13,8 @@ plugins:
       blog_toc: true
       archive_date_format: MMMM yyyy
       categories_allowed:
-        - Holidays
+        - Technical
+        - Personal
         - News
       pagination_per_page: 5
       post_slugify: !!python/object/apply:ext.slugs.slugify

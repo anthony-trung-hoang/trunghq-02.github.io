@@ -14,7 +14,9 @@ My core expertise includes:
 - **Observability solutions** – Prometheus, Grafana, CloudWatch, New Relic, OpenTelemetry  
 - **Platform engineering** – Internal Developer Platforms (IDPs), self-service provisioning portals, workflow automation  
 
-I’ve worked on **enterprise-scale initiatives**, delivering: - Self-service infrastructure provisioning for developers
+I’ve worked on **enterprise-scale initiatives**, delivering:
+
+- Self-service infrastructure provisioning for developers
 - IaC governance frameworks and reusable Terraform modules
 - Observability systems for hybrid Kubernetes clusters
 - Platform migrations impacting thousands of repositories
