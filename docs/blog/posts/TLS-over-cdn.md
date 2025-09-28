@@ -47,16 +47,18 @@ This article clarifies the mechanics and trust boundaries when TLS is used with 
     
 - The CDN provider is issued an HTTPS certificate for `example.com`, and it is **imported at the CDN edge**.
     
-    <aside>
-    💡
-    
-    Here raises a question:
-    
-    The imported cert only has the public key, then how the TLS handshake successfully happened?
-    
-    Answer: actually the CDN is loaded with the private key of the cert too.
-    
-    </aside>
+!!! question "🔑 Certificate vs Private Key"
+
+    **Wait, how does the TLS handshake work?**
+
+    You might think: "The imported certificate only contains the public key, so how can the CDN complete the TLS handshake?"
+
+    The Answer
+        The CDN must also be loaded with the **private key** of the certificate!
+        Without the private key, the CDN couldn't decrypt the client's pre-master secret during the handshake.
+
+    !!! warning "Security Implication"
+        This is why certificate management at CDN providers requires careful security practices—they hold your private keys!
     
 - The origin server is configured to receive traffic either via:
     - Plain HTTP
