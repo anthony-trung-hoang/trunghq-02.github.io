@@ -16,6 +16,22 @@ Here you'll find articles, notes, and deep dives on topics I’m exploring, buil
 
 ## 📌 Featured Posts
 
+### 🐳 [Peeking Under the Hood: Docker Networking with Namespaces](blog/posts/network-namespace-docker.md)
+*December 11, 2024 • 15 min read*
+
+Dive deep into the foundational concepts of Docker networking! This hands-on tutorial walks you through Linux network namespaces, veth pairs, and bridge networking with practical EC2 examples. Discover what Docker actually does behind the scenes when you run that simple `docker run` command.
+
+**What you'll learn:** How containers achieve network isolation using namespaces, setting up bridge networks and iptables rules from scratch, and the connection between manual network setup and Docker's automation.
+
+---
+
+### 🔐 [TLS Termination Over CDN / Proxy / Load Balancer](blog/posts/TLS-over-cdn.md)
+*December 11, 2024 • 15 min read*
+
+Understand the mechanics and security implications of TLS termination in modern web architectures. This comprehensive guide covers where TLS connections are terminated, what clients see versus reality, and how to secure traffic between CDNs and origin servers.
+
+**Key topics covered:** TLS handshake flow with CDNs and SNI, trust boundaries and certificate management, and security considerations for CDN-based architectures.
+
 ---
 
 ## 🚀 Why This Blog?
