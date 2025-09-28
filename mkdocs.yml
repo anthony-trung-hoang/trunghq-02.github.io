@@ -62,13 +62,6 @@ extra:
     - icon: fontawesome/brands/linkedin
       name: Anthony's LinkedIn
       link: https://www.linkedin.com/in/qu%E1%BB%91c-trung-ho%C3%A0ng-b363982b6/
-  alternate:
-    - name: English
-      link: /
-      lang: en
-    - name: Vietnamese
-      link: /
-      lang: vi
   generator: false
 
 hooks:
